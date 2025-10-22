@@ -8,11 +8,16 @@ public class Ficha {
 	private Float mpMax;
 	private Float xp;
 	// Atributos
-	
+	private Float str;
+	private Float dex;
+	private Float sap; // Sapiencia = Inteligencia
+	private Float sab;
+	private Float car;
+	// Moedas			
 	
 	// Retorno
 	public String viewFicha() {
-		String showAll = "Ficha:\n" + "Nome:" + nome + "\nHp:" + hpMax +"\nMp:" + mpMax + "\nXp:" + xp;
+		String showAll = "Ficha:\n" + "Nome:" + nome + "\nHp:" + hpMax +"\nMp:" + mpMax + "\nXp:" + xp + "\nFor:" + str + "\nDex:" + dex + "\nInt:" + sap + "\nSab:" + sab + "\nCar:" + car;
 		return showAll;
 	}
 	
@@ -45,8 +50,6 @@ public class Ficha {
 	
 //	public void calculator(Float valor, String typeOperation, String typeAtributte) {};
 	
-	// TODO (Perguntar a Elton se não seria mais eficiente criar uma variavel já valor lá em cima ao invés de uma que se cria toda vez que o metodo é puxado, ou tô pensando merda)
-	
 	//Get and Setters
 	public String getNome() {
 		return nome;
@@ -71,5 +74,38 @@ public class Ficha {
 	}
 	public void setXp(Float xp) {
 		this.xp = xp;
-	}	
+	}
+
+	// Getters and Setters dos Atributos
+	public Float getStr() {
+		return str;
+	}
+	public void setStr(Float str) {
+		this.str = str;
+	}
+	public Float getDex() {
+		return dex;
+	}
+	public void setDex(Float dex) {
+		this.dex = dex;
+	}
+	public Float getSap() {
+		return sap;
+	}
+	public void setSap(Float sap) {
+		this.sap = sap;
+	}
+	public Float getSab() {
+		return sab;
+	}
+	public void setSab(Float sab) {
+		this.sab = sab;
+	}
+	public Float getCar() {
+		return car;
+	}
+	public void setCar(Float car) {
+		this.car = car;
+	}
+	
 }

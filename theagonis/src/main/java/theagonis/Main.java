@@ -28,6 +28,25 @@ public class Main {
 			Float xp = sc.nextFloat();
 			ficha.setXp(xp);
 			
+			System.out.println("Defina os Atributos, Força:");
+			Float str = sc.nextFloat();
+			ficha.setStr(str);
+			
+			System.out.println("Destreza");
+			Float dex = sc.nextFloat();
+			ficha.setDex(dex);
+			
+			System.out.println("Inteligencia");
+			Float sap = sc.nextFloat();
+			ficha.setSap(sap);
+			
+			System.out.println("Sabedoria");
+			Float sab = sc.nextFloat();
+			ficha.setSab(sab);
+			
+			System.out.println("Carisma");
+			Float car = sc.nextFloat();
+			ficha.setCar(car);
 			
 			System.out.println(ficha.viewFicha());
 			System.out.println("Essa ficha está correta? Digite 1 para Sim.");
